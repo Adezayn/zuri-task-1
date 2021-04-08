@@ -46,11 +46,12 @@ ul li a:hover {
 
 div.hero-section {
     background: #304353;
-    padding: 10rem;
+    padding: 10rem 0;
 }
 
 div.hero-content-heading {
-    text-align: center;
+    width:80%;
+    margin:0 auto;
 }
 
 div.hero-content-heading h3 {
@@ -59,6 +60,7 @@ div.hero-content-heading h3 {
     letter-spacing: 2px;
     font-weight: 300;
     color: #bcc3c7;
+    text-align: center;
 }
 
 div.hero-content-heading p {
@@ -89,7 +91,7 @@ div.hero-content-btn a {
 
 div.hero-background {
     background: #f0f0f0;
-    padding: 10rem;
+    padding: 10rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,9 +100,8 @@ div.hero-background {
 div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-    padding: 15px 40px;
+    padding: 25px 40px;
     width: 550px;
-    height: 220px;
     position: relative;
 }
 
@@ -344,4 +345,41 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media (max-width:767px){
+    ul.nav-links{
+        flex-direction: column;
+    }
+    div.nav-bar{
+        padding: 1rem;
+    }
+    div.snapshot-box-content{
+        flex-direction: column;
+    }
+    div.background{
+        width:80%;
+    }
+    div.hero-background-pos{
+        display: none;
+    }
+    div.hero-background-pos{
+     display:none;
+    }
+    
+    div.background-sub{
+        text-align:center;
+    }
+    div.background p{
+        padding-left:0;
+    } 
+    
+    input[type="text"], input[type="email"], textarea{
+        width:100%;
+    }
+}
+@media (max-width:280px){
+    div.background h4{
+        padding:2rem 0;
+    }
 }
